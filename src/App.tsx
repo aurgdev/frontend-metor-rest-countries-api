@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import { HiOutlineSearch } from "react-icons/hi";
 import useFetch from "./utils";
 import Countries from "./components/Countries";
-import Country from "./components/Country";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const COUTRIES_API = "https://restcountries.com/v2/all";
@@ -85,15 +84,6 @@ function App() {
               numberWithCommas={numberWithCommas}
             />
           </Route>
-          {/* <Route
-            path="/:countryName"
-            children={
-              <Country
-                numberWithCommas={numberWithCommas}
-                getCountryName={getCountryName}
-              />
-            }
-          /> */}
         </Switch>
       </div>
     </Router>
